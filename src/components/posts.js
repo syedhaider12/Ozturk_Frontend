@@ -24,8 +24,8 @@ function Posts() {
   },[showPost]);
   return (
    <>
-   <div>
-  {showPost.length>0 ? <h1 className="pt-10 pb-2 text-center font-bold sm:text-2xl text-[#031e4a] " id="posts" data-aos="fade-right" data-aos-duration="1500"  > Featured Properties</h1>:null}
+   
+  {showPost.length>0 ? <div><h1 className="pt-10 pb-2 text-center font-bold sm:text-2xl text-[#031e4a] " id="posts" data-aos="fade-right" data-aos-duration="1500"  > Featured Properties</h1>
    <div className='grid w-full h-auto grid-cols-1 gap-8 p-5 sm:px-10 md:grid-cols-3'>
    {showPost.map(({ title,description,image }, i)=>(
     <div key={i} className="overflow-hidden duration-300 rounded-lg shadow-lg shadow-gray-400 ">
@@ -41,11 +41,13 @@ function Posts() {
 
     </div>
    )
+   
   
    
    )}
    </div>
-   </div>
+   </div>:null}
+   
    </>
   )
 }

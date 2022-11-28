@@ -37,7 +37,7 @@ function Navbar() {
             
             <li className="cursor-pointer hover:underline decoration-2 decoration-[#031e4a] underline-offset-8"><Link  to="service"  smooth={true} offset={-50}>Service</Link></li>
             <li className="cursor-pointer hover:underline decoration-2 decoration-[#031e4a] underline-offset-8"><Link  to="about"  smooth={true}>About</Link></li>
-            {showPost.length>0 ? <li className="cursor-pointer hover:underline decoration-2 decoration-[#031e4a] underline-offset-8"><Link  to="posts"  smooth={true} offset={-50}>Product</Link></li>:null}
+            {showPost.length> 0 ? <li className="cursor-pointer hover:underline decoration-2 decoration-[#031e4a] underline-offset-8"><Link  to="posts"  smooth={true} offset={-50}>Product</Link></li>:null}
             <li className="cursor-pointer hover:underline decoration-2 decoration-[#031e4a] underline-offset-8"><Link  to="contact"  smooth={true}>Contact</Link></li>
             </ul>
           </div>

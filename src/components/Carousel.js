@@ -1,5 +1,5 @@
 import React from 'react';
-import Bounce from 'react-reveal/Bounce';
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import "swiper/css";
