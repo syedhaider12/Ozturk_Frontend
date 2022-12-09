@@ -32,7 +32,8 @@ function Edit({editHandle , id}) {
       headers: {
           
           'Accept' : 'application/json',
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*'
       }
       })
     .then((res) => {

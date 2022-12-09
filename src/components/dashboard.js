@@ -27,7 +27,8 @@ function Dashboard() {
         headers: {
             'authorization': token,
             'Accept' : 'application/json',
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*'
         }
         });
       if (data) {

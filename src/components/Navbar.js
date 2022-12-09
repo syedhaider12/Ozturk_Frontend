@@ -9,7 +9,14 @@ function Navbar() {
 
   const fetchData=async()=>{
     try{
-     const {data} =await axios.get('https://backendozturk.herokuapp.com/show')
+     const {data} =await axios.get('https://backendozturk.herokuapp.com/show',{
+      headers: {
+          
+          'Accept' : 'application/json',
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*'
+      }
+      })
      if(data){
 
       

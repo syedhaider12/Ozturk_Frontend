@@ -26,7 +26,13 @@ const[resError ,setResError]=useState({});
       };
 
       axios
-        .post('https://backendozturk.herokuapp.com/admin/get', data)
+        .post('https://backendozturk.herokuapp.com/admin/get', data,{
+          headers: {
+              
+            'Access-Control-Allow-Origin': '*',
+            'Content-Type': 'application/json',
+          }
+          })
         .then((res) => {
          if(res.status===200){
 

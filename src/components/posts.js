@@ -5,7 +5,13 @@ function Posts() {
 
   const fetchData=async()=>{
     try{
-     const {data} =await axios.get('https://backendozturk.herokuapp.com/show')
+     const {data} =await axios.get('https://backendozturk.herokuapp.com/show',{
+      headers: {
+          
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json',
+      }
+      })
     
      if(data){
 
