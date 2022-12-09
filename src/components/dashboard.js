@@ -25,7 +25,7 @@ function Dashboard() {
     try {
       const { data } = await axios.get("https://backendozturk.herokuapp.com/show",{
         headers: {
-            'authorization': token,
+           
             'Accept' : 'application/json',
             'Content-Type': 'application/json',
             'Access-Control-Allow-Origin': '*'
