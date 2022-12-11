@@ -32,7 +32,7 @@ function Post({handleClose}) {
     console.log(formData)
     if(Object.keys(error).length === 0){
 
-      axios.post('https://backendozturk.herokuapp.com/add', formData,{
+      axios.post('https://ozturkbackend-production.up.railway.app/add', formData,{
         headers: {
             
             'Accept' : 'application/json',

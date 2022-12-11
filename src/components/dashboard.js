@@ -23,7 +23,7 @@ function Dashboard() {
   }
   const fetchData = async () => {
     try {
-      const { data } = await axios.get("https://backendozturk.herokuapp.com/show",{
+      const { data } = await axios.get("https://ozturkbackend-production.up.railway.app/show",{
         headers: {
            
             'Accept' : 'application/json',
@@ -41,11 +41,12 @@ function Dashboard() {
   const  deleteHandle =async(id)=>{
     console.log("del")
   try{
-    await axios.delete(`http://localhost:9000/delete/${id}`,{
+    await axios.delete(`https://ozturkbackend-production.up.railway.app/delete/${id}`,{
       headers: {
           
           'Accept' : 'application/json',
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*'
       }
       })
   }catch(err){

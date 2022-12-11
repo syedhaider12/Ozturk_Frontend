@@ -28,7 +28,7 @@ function Edit({editHandle , id}) {
     formData.append('title',edit.title)
     formData.append('description',edit.description)
     formData.append('img',edit.img)
-    axios.put(`https://backendozturk.herokuapp.com/update/${id}`, formData,{
+    axios.put(`https://ozturkbackend-production.up.railway.app/${id}`, formData,{
       headers: {
           
           'Accept' : 'application/json',
@@ -44,7 +44,14 @@ function Edit({editHandle , id}) {
   }
   async function editData(id) {
     try {
-      const {data } = await axios.get(`http://localhost:9000/post/${id}`);
+      const {data } = await axios.get(`https://ozturkbackend-production.up.railway.app/post/${id}`,{
+        headers: {
+            
+            'Accept' : 'application/json',
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*'
+        }
+        });
       console.log(data.data)
       setEit({
         ...edit,

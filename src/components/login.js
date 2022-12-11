@@ -26,7 +26,7 @@ const[resError ,setResError]=useState({});
       };
 
       axios
-        .post('https://backendozturk.herokuapp.com/admin/get', data,{
+        .post('https://ozturkbackend-production.up.railway.app/admin/get', data,{
           headers: {
               
             'Access-Control-Allow-Origin': '*',

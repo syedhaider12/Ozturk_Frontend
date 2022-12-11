@@ -5,7 +5,7 @@ function Posts() {
 
   const fetchData=async()=>{
     try{
-     const {data} =await axios.get('https://backendozturk.herokuapp.com/show',{
+     const {data} =await axios.get('https://ozturkbackend-production.up.railway.app/show',{
       headers: {
           
         'Access-Control-Allow-Origin': '*',
